@@ -160,12 +160,13 @@ If you’d like to discuss the code, implementation decisions, or the future of 
 
 ## 📈 Roadmap
 
-- Add support for Incremental Static Regeneration (ISR) rendering of blog posts
-- Add Server-Side styling with Tailwind on applicable elements for faster styling
+- Potentailly add support for Incremental Static Regeneration (ISR) rendering of blog posts
+- Add Server-Side styling with Tailwind on applicable elements for bundled and faster styling
 - Multi-language routing (i18n)  
 - Additional content types: timelines, project breakdowns, media essays
 - Add explicit cache-control strategies
-- dynamic Article OG generation
+- Add dynamic OG generation for articles
+- Add inputs for smaller Main Visuals to conditionally render on mobile devices to decrease LCP
 - Offline-first support and progressive enhancement 
 
 ---
