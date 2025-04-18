@@ -89,23 +89,51 @@ During a recent deep-dive optimization, I rebuilt major portions of Tsundoku’s
 | Lighthouse Scores    | 65–70          | **95–100**      |
 
 
-## 📊 Lighthouse Audit Results
-Here’s a recent Lighthouse audit for Tsundoku's homepage after the full performance refactor:
+## 📊 PageSpeed Insights Audit Results
 
-![image](https://github.com/user-attachments/assets/e0686f43-b9b0-47c6-bbbf-3c4b39916165)
+Here’s a recent performance audit for Tsundoku’s homepage after the full optimization refactor, using Google’s official PageSpeed Insights tool.
 
-| Metric                  | Score |
-|------------------------|-------|
-| Performance            | 99    |
-| Accessibility          | 94    |
-| Best Practices         | 96    |
-| SEO                    | 100   |
-| Largest Contentful Paint | 0.8s |
-| Total Blocking Time    | 30ms  |
-| Cumulative Layout Shift | 0.003 |
+---
 
+### 🖥️ Desktop
 
-These results were achieved by reducing media weight by 90%+, replacing PNGs/GIFs with WebP and MP4, locally bundling WOFF2 fonts, tightening typing guards, and splitting client/server responsibilities efficiently with SSR/CSR.
+<img width="770" alt="Tsundoku-PageInsights" src="https://github.com/user-attachments/assets/6d5e265f-b51d-4fdb-99cd-90ff39cdb333" />
+
+| Metric                   | Value  |
+|--------------------------|--------|
+| Performance              | 100    |
+| Accessibility            | 94     |
+| Best Practices           | 96     |
+| SEO                      | 100    |
+| First Contentful Paint   | 0.2s   |
+| Largest Contentful Paint | 0.7s   |
+| Total Blocking Time      | 0ms    |
+| Cumulative Layout Shift  | 0.003  |
+| Speed Index              | 0.8s   |
+
+---
+
+### 📱 Mobile
+
+<img width="778" alt="Tsundoku_Mobile-PageInsights" src="https://github.com/user-attachments/assets/80b2cb9a-425b-49f2-8adf-769fa73c9666" />
+
+| Metric                   | Value  |
+|--------------------------|--------|
+| Performance              | 93     |
+| Accessibility            | 93     |
+| Best Practices           | 96     |
+| SEO                      | 100    |
+| First Contentful Paint   | 1.2s   |
+| Largest Contentful Paint | 3.2s   |
+| Total Blocking Time      | 0ms    |
+| Cumulative Layout Shift  | 0.032  |
+| Speed Index              | 1.8s   |
+
+---
+
+These results were achieved by reducing media weight by 90%+, replacing PNGs and GIFs with WebP and MP4, locally bundling WOFF2 fonts, tightening typing guards, and delegating rendering between server (SSR) and client (CSR) for optimal load behavior.
+
+> 🛠️ **Planned:** I intend to reduce mobile LCP further by conditionally rendering lower-resolution Main Visuals for small screens.
 
 ---
 
