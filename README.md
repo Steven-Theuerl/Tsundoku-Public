@@ -188,14 +188,16 @@ If you’d like to discuss the code, implementation decisions, or the future of 
 
 ## 📈 Roadmap
 
-- Potentailly add support for Incremental Static Regeneration (ISR) rendering of blog posts
-- Add Server-Side styling with Tailwind on applicable elements for bundled and faster styling
-- Multi-language routing (i18n)  
+- Add Dark Mode for better accessibility and user comfort
+- Explore Incremental Static Regeneration (ISR) for blog post rendering
+- Implement server-side Tailwind styling where applicable for bundled, faster styling
+- Add multi-language (i18n) routing for global audiences
 - Additional content types: timelines, project breakdowns, media essays
-- Add explicit cache-control strategies
-- Add dynamic OG generation for articles
-- Add inputs for smaller Main Visuals to conditionally render on mobile devices to decrease LCP
-- Offline-first support and progressive enhancement 
+- Define explicit cache-control strategies for smarter asset delivery
+- Implement dynamic Open Graph image generation for each article
+- Add support for smaller Main Visuals on mobile to reduce LCP without sacrificing design
+- Enhance offline-first capabilities and enable progressive enhancement
+- Add a Low-Data Mode toggle to better serve international users on limited networks
 
 ---
 
