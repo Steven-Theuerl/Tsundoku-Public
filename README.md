@@ -10,6 +10,14 @@ The platform is powered by a custom-built Sanity Studio backend, using server-si
 
 ---
 
+## 🔗 Live Site
+
+👉 [https://www.tsundoku.blog/](https://www.tsundoku.blog/)
+
+If you’d like to discuss the code, implementation decisions, or the future of the platform, I’d love to connect: [mr.steven.theuerl@gmail.com](mailto:mr.steven.theuerl@gmail.com)
+
+---
+
 ## 🔒 Code Access
 
 This repository is for showcase and portfolio purposes only.  
@@ -162,7 +170,7 @@ These results were achieved by reducing media weight by 90%+, replacing PNGs and
 ```
 - Fully responsive layout and stateful navigation  
 - Serverless email contact form using client-side submission 
-- Optimized asset delivery via Sanity CDN + SSR-aware fetch logic  
+- Optimized asset delivery via Sanity CDN + SSR-aware fetch logic and IST delivery 
 - Cookie-based draft preview system integrated with the CMS via custom APIs
 - Self-hosted Fonts that are bundled locally with preload strategies using WOFF2 to eliminate fetch delays and blockages from third-party CDNs
 
@@ -178,18 +186,9 @@ These results were achieved by reducing media weight by 90%+, replacing PNGs and
 
 ---
 
-## 🔗 Live Site
-
-👉 [https://www.tsundoku.blog/](https://www.tsundoku.blog/)
-
-If you’d like to discuss the code, implementation decisions, or the future of the platform, I’d love to connect: [mr.steven.theuerl@gmail.com](mailto:mr.steven.theuerl@gmail.com)
-
----
-
 ## 📈 Roadmap
 
 - Add Dark Mode for better accessibility and user comfort
-- Explore Incremental Static Regeneration (ISR) for blog post rendering
 - Implement server-side Tailwind styling where applicable for bundled, faster styling
 - Add multi-language (i18n) routing for global audiences
 - Additional content types: timelines, project breakdowns, media essays
